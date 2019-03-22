@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Bjørn Emmaneel">
+  <link rel="stylesheet" href="css/master.css">
+  <title>Space Trade</title>
+  <style>
+  #TMenu:checked ~ nav{
+    z-index: 1;
+    transition: margin-left .8s ease-out;
+  }
+
+  #TLabel::before{
+    content: "\2630";
+  }
+
+  #TMenu:checked ~ main #TLabel::before{
+    content: "\2716"
+  }
+
+  nav{
+    position: absolute;
+  }
+
+  main{
+    position: absolute;
+    margin-left: 0;
+  }
+  </style>
+</head>
+
+<body lang="nl">
+  <input type="checkbox" id="TMenu">
+
+  <nav>
+    <h4>Menu</h4>
+    <ul>
+      <li>
+        <a href="index1.html">Inhoud Schuift</a>
+      </li>
+      <li>
+        <a href="index2.html" class="actief">Menu Schuift</a>
+      </li>
+      <li>
+        <a href="index3.html">Alles Schuift</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <label for="TMenu" id="TLabel"></label>
+      <h1>Space Trade</h1>
+      <p>Space trade is interplanetary or interstellar trade.<br>
+        Plans and ideas on how trade functions have been published by Futurists and pundits since the 1960s,
+        though science fiction writers have been envisioning such trade for several more decades.</p>
+      <img src="foto's/elite-dangerous-large.jpg" alt=" ">
+      <h2>Reality</h2>
+      <p>Though the existence of interstellar trade is unknown,
+        there are several theories developed by well known economists on how trade calculations and interest rates would have to be adjusted in such a circumstance.<br>
+        At very high velocities,
+        for example a space station traveling at significant speeds relative to the speed of light,
+        there will be time dilation.<br>
+        In 2004 Espen Gaarder Haug published a technical research article in Wilmott Magazine on how interest rates and securities calculations had to be adjusted for very high velocities to avoid arbitrage.<br>
+        He published similar theories on what he called "SpaceTime Finance" in a book published in 2007 titled Derivatives Models on Models.<br>
+        Paul Krugman, winner of the Nobel Memorial Prize in Economic Sciences,
+        published a research article on interstellar trade in 2010.</p>
+    </div>
+    <div id="validatie">
+    <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+        <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+    </a>
+</div>
+  </main>
+</body>
+
+</html>
