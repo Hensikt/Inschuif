@@ -7,28 +7,32 @@
   <link rel="stylesheet" href="css/master.css">
   <title>Space Trade</title>
   <style>
-    #TMenu:checked ~ main{
-      margin-left: 9.4em;
-    }
 
-    #TLabel::before{
-      content: "\2630";
-    }
+  #TMenu:checked ~ main {
+    margin-left: 10em;
+  }
+  #TMenu:checked ~ nav {
+    margin-left: 0em;
+  }
+  #TLabel::before {
+    content: "\2630";
+    cursor: pointer;
+  }
+  #TMenu:checked ~ main #TLabel::before{
+    content: "\2715";
+  }
 
-    #TMenu:checked ~ main #TLabel::before{
-      content: "\2716"
-    }
-
-    nav{
-      position: absolute;
-      transition: margin-left .8s ease-out;
-    }
-
-    main{
-      position: absolute;
-      margin-left: 0;
-      transition: margin-left .8s ease-out;
-    }
+  nav{
+    position: fixed;
+    margin-left: -10em;
+    transition: margin-left .8s cubic-bezier(.20,.65,.80,1.40);
+  }
+  main{
+    position: absolute;
+    margin-left: 0;
+    transition: margin-left .8s cubic-bezier(.20,.65,.80,1.40);
+  }
+  
   </style>
 </head>
 
